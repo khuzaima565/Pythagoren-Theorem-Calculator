@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagorean Theorem Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pythagorean Theorem Calculator</h2>
+        <form id="pythagoreanForm">
+            <div class="input-group">
+                <label for="base">Base Length:</label>
+                <input type="number" id="base" name="base" required>
+            </div>
+            <div class="input-group">
+                <label for="perpendicular">Perpendicular Length:</label>
+                <input type="number" id="perpendicular" name="perpendicular" required>
+            </div>
+            <button type="button" onclick="calculateHypotenuse()">Calculate Hypotenuse</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
